@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specify</title>
+    <style>
+        h3 {
+            background-color: skyblue;
+        }
+        .content {
+            background-color: palegreen;
+            /* background-color: lightgray !important; */
+        }
+        #c1 {
+            background-color: violet;
+        }
+        .incontent {
+            background-color: lightyellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Game</h1>
+    <h3>Final Fantasy I</h3>
+    <h3 class="content">Final Fantasy II</h3>
+    <h3 class="content" id="c1">Final Fantasy III</h3>
+    <h3 id="c1" style="background-color: coral;">Final Fantasy IV</h3>
+    <hr>
+    <!-- div.content มี 2 child elements คือ p และ p.incontent-->
+    <div class="content">
+        <p>Final Fantasy V</p>
+        <p class="incontent">Final Fantasy VI</p>
+        <!-- p.incontent มี div.content เป็น parent element -->
+    </div>
+</body>
+</html>
