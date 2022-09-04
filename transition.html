@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        * { margin: 0; }
+        img {
+            width: 90px;
+            height: 90px;
+            object-fit: cover;
+            margin: 20px;
+        }
+        .myImg {
+            transition: width 3s, height 3s;
+            /* transition: width 3s, height 3s, transform 3s linear; */
+            /* transition: width 3s, height 3s, transform 3s linear 0.5s; */
+        }
+        .myImg:hover {
+            width: 360px;
+            height: 360px;
+        }
+        .newImg {
+            transition-property: transform;
+            transition-duration: 1.5s;
+            /* transition-timing-function: linear; */
+            /* transition-timing-function: ease; */
+            /* transition-timing-function: ease-in; */
+            /* transition-timing-function: ease-out; */
+            transition-timing-function: ease-in-out;
+            /* transition-timing-function: steps(4, end) */
+            /* transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1) */
+            /* transition-timing-function:cubic-bezier(0.95, 0.05, 0.795, 0.035); */
+            transition-delay: 0s;
+        }
+        .newImg:hover {
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+<body>
+    <img class="myImg" src="images/aerith-avartar.jpg" alt="avatar">
+    <img  class="newImg" src="images/aerith-avartar.jpg" alt="avatar">
+</body>
+</html>

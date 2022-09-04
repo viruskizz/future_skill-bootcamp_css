@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform 3D</title>
+    <style>
+        * { margin: 0; }
+        p { margin: 5px; }
+        div {
+            display: inline-block;
+            text-align: center;
+            vertical-align: top;
+            width: 120px;
+            height: 120px;
+            border: 1px solid salmon;
+            margin: 20px;
+        }
+
+        .rotateX {
+            transform: rotateX(45deg);
+        }
+        .rotateY {
+            transform: rotateY(45deg);
+        }
+        .rotateZ {
+            transform: rotateZ(90deg);
+        }
+        /* use multi function */
+        .rotatePX {
+            transform: perspective(240px) rotateX(45deg);
+        }
+        /* use perspective to parent and rotate in child */
+        .perspective {
+            perspective: 240px;
+        }
+        .rotatePY {
+            rotate: y 45deg;
+        }
+        .scaleZ {
+            transform: perspective(120px) translateZ(-120px);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="images/woff-lightning-avatar.png" width="100%">
+        <p>Original</p>
+    </div>
+    <div>
+        <img class="rotateX" src="images/woff-lightning-avatar.png" width="100%">
+        <p>RotateX</p>
+    </div>
+    <div>
+        <img class="rotateY" src="images/woff-lightning-avatar.png" width="100%">
+        <p>RotateY</p>
+    </div>
+    <div>
+        <img class="rotateZ" src="images/woff-lightning-avatar.png" width="100%">
+        <p>RotateZ</p>
+    </div>
+    <div>
+        <img class="rotatePX" src="images/woff-lightning-avatar.png" width="100%">
+        <p>Rotate PerspectiveX</p>
+    </div>
+    <div class="perspective">
+        <img class="rotatePY" src="images/woff-lightning-avatar.png" width="100%">
+        <p>Rotate PerspectiveY</p>
+    </div>
+    <div>
+        <img class="scaleZ" src="images/woff-lightning-avatar.png" width="100%">
+        <p>Scale Z</p>
+    </div>
+</body>
+</html>

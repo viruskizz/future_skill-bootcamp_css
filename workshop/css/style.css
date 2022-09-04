@@ -73,9 +73,9 @@
       }
       .card p.content {
         height: 100%;
-        overflow: hidden; 
-        white-space: wrap; 
-        text-overflow:ellipsis;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: wrap;
         /* use webkit to cut text muliline*/
         display: -webkit-box;
         -webkit-line-clamp: 6;

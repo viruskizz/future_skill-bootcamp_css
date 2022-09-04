@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Image</title>
+    <style>
+        * { margin: 0; }
+        div {
+            width: 360px;
+            height: 180px;
+            color: white;
+            margin: 5px;
+            background-color: whitesmoke;
+            border: 5px dotted silver;
+            padding: 10px;
+        }
+        .bg {
+            background-image: url("images/nier-cover.webp");
+            background-size: cover;
+            /* background-size: contain; */
+            /* background-size: 100%; */
+            background-repeat: no-repeat;
+            background-clip: initial;
+            /* background-clip: border-box; */
+            /* background-clip: padding-box; */
+            /* background-clip: content-box; */
+        }
+        .grass {
+            background-image: url("images/grass-tile.jpg");
+            /* background-repeat: no-repeat; */
+            background-repeat: repeat;
+            /* background-repeat: repeat-x; */
+            /* background-repeat: repeat-y; */
+        }
+        .multi {
+            background-image: url("images/ffi-icon.png"), url("images/grass-tile.jpg");
+            background-size: 60px, auto;
+            background-position: right bottom, 0% 0%;
+            background-repeat: no-repeat, repeat;
+            /* background-repeat: repeat; */
+            /* background-repeat: repeat-x; */
+            /* background-repeat: repeat-y; */
+        }
+    </style>
+</head>
+<body>
+    <div class="bg">
+        on background image
+    </div>
+    <div class="grass">
+        on da grass
+    </div>
+    <div class="multi">
+        multi
+    </div>
+</body>
+</html>

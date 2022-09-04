@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Gradient</title>
+    <style>
+        /*
+          https://cssgradient.io/
+        */
+        * { margin: 0; }
+        div {
+            width: 160px;
+            height: 160px;
+            color: white;
+            margin: 5px;
+            padding: 10px;
+        }
+        .linear {
+            background: linear-gradient(
+                90deg,
+                rgba(2,0,36,1) 0%,
+                rgba(9,9,121,1) 35%,
+                rgba(0,212,255,1) 100%
+            );
+        }
+        .radial {
+            background: radial-gradient(
+                circle,
+                rgba(2,0,36,1) 0%,
+                rgba(9,9,121,1) 35%,
+                rgba(0,212,255,1) 100%
+            );
+        }
+        .conic {
+            background: conic-gradient(
+                /* from 0, */
+                /* from 0.5turn, */
+                /* from 3.1416rad, */
+                from 90deg,
+                rgba(2,0,36,1) 0%,
+                rgba(9,9,121,1) 35%,
+                rgba(0,212,255,1) 100%
+            );
+        }
+    </style>
+</head>
+<body>
+    <div class="linear">
+        Linear
+    </div>
+    <div class="radial">
+        Radial
+    </div>
+    <div class="conic">
+        Conic
+    </div>
+</body>
+</html>

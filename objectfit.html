@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Fit</title>
+    <style>
+        .content {
+            width: 90%;
+            margin: auto;
+            display: flex;
+            flex: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 10px;
+            flex-shrink: 3;
+        }
+        h1 { text-align: center; }
+        p {
+            text-align: center;
+            margin: 0;
+            color: #454545;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        img {
+            width: 200px;
+            height: 200px;
+            border: 1px solid #999999;
+            border-radius: 5px;
+        }
+        .none {  object-fit: none }
+        .cover {  object-fit: cover }
+        .fill {  object-fit: fill }
+        .contain {  object-fit: contain }
+        .scaledown {  object-fit: scale-down }
+        .rightbottom { object-position: right bottom; }
+        .left50 { object-position: 0% 50%; }
+    </style>
+</head>
+<body>
+    <h1>Object fit</h1>
+    <div class="content">
+        <div class="box">
+            <img src="images/grandblue-fantasy.jpg" alt="img-contain">
+            <p>default</p>
+        </div>
+        <div class="box">
+            <img class="none" src="images/grandblue-fantasy.jpg" alt="img-contain">
+            <p>none</p>
+        </div>
+        <div class="box">
+            <img class="cover" src="images/grandblue-fantasy.jpg" alt="img-contain">
+            <p>cover</p>
+        </div>
+        <div class="box">
+            <img class="fill" src="images/grandblue-fantasy.jpg" alt="img-contain">
+            <p>fill</p>
+        </div>
+        <div class="box">
+            <img class="contain" src="images/grandblue-fantasy.jpg" alt="img-contain">
+            <p>contain</p>
+        </div>
+        <div class="box">
+            <img class="scaledown" src="images/grandblue-fantasy.jpg" alt="img-contain">
+            <p>scale-down</p>
+        </div>
+        <div class="box">
+            <img class="cover rightbottom" src="images/grandblue-fantasy.jpg" alt="img-contain">
+            <p>cover: right-down</p>
+        </div>
+        <div class="box">
+            <img class="cover left50" src="images/grandblue-fantasy.jpg" alt="img-contain">
+            <p>cover: 0% 50%</p>
+        </div>
+    </div>
+    <p style="text-align: right; font-weight: lighter; margin-right: 20px; margin-top: 20px;">
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/object-position">ref: object-position</a>
+    </p>
+</body>
+</html>
