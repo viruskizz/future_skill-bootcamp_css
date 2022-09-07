@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading</title>
+    <style>
+        * { margin: 0; }
+        @keyframes loading {
+            from {
+                width: 0%;
+            }
+            to {
+                width: 100%;
+            }
+        }
+        @keyframes spinning {
+            from {
+                width: 100%;
+                background: linear-gradient(to right, #9da2ff 8%, #3740ff 23%, #9da2ff 33%);
+                background-position: 0em 0;
+            }
+            to {
+                width: 100%;
+                background: linear-gradient(to right, #9da2ff 8%, #3740ff 23%, #9da2ff 33%);
+                background-position: 50em 0;
+            }
+        }
+        .spinning {
+            animation: spinning 3s linear infinite;
+        }
+        .loading {
+            animation: loading 3s linear infinite;
+        }
+        .progress {
+            color: midnightblue;
+            border-radius: inherit;
+            background-color: indigo;
+            height: 100%;
+        }
+        .progress-bar {
+            display: block;
+            background-color: thistle;
+            width: 200px;
+            height: 10px;
+            border-radius: 20px;
+            border: 3px solid snow;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="progress-bar">
+        <div class="progress loading"></div>
+    </div>
+    <div class="progress-bar">
+        <div class="progress spinning"></div>
+    </div>
+</body>
+</html>

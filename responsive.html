@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+    <style>
+        * { margin: 0; }
+        h1 {
+            font-size: 2rem;
+        }
+        img {
+            width: 80vw;
+            max-width: 600px; /* use max or min to control box responsive size */
+        }
+        .center { text-align: center; }
+        .box {
+            display: block;
+        }
+        /*
+        Use a media query to add a breakpoint at 800px
+        Activate these styles ,when viewport is 800px or bigger
+        */
+        @media screen and (min-width: 800px) {
+            h1 {
+                font-size: 4rem; /* rem is recommend for font */
+                font-size: 4vw; /* vw is not Recommend for font*/
+                font-size: calc(1.5rem + 3vw); /* calc() to mixin unit */
+            }
+            .box {
+                display: inline-block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div style="margin-top: 20px"></div>
+    <h1 class="center">Responsive Website</h1>
+    <div class="center">
+        <div class="box">
+            <img src="images/ffxii-airship.webp" alt="ffxii-airship">
+        </div>
+        <div class="box">
+            <img src="images/ffxii-airship.webp" alt="ffxii-airship">
+        </div>
+        <div class="box">
+            <img src="images/ffxii-airship.webp" alt="ffxii-airship">
+        </div>
+    </div>
+</body>
+</html>

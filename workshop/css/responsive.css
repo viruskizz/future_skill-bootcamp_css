@@ -7,6 +7,7 @@ Color Palette
   Variant    #94DAFF
   Accent     #99FEFF
 */
+
 /* Default element style*/
 body {
   font-family: 'Open Sans', sans-serif;
@@ -41,13 +42,33 @@ textarea {
 /* Default sheet style*/
 .container {
   width: 90%;
-  min-width: 320px;
+  /* min-width: 280px; */
   max-width: 1280px;
   margin: auto;
+  /* margin-left: 20px;
+  margin-right: 20px; */
+}
+.row {
+  width: 100%;
+  text-align: center;
 }
 .row > div {
   display: inline-block;
   vertical-align: top;
+  text-align: initial;
+}
+.row .col {
+  width: 100%;
+  /* margin-left: 20px; */
+}
+@media screen and (min-width: 768px) {
+  .container {
+    margin: auto;
+  }
+  .row .col {
+    width: 30%;
+    margin-left: 0;
+  }
 }
 .card {
   width: 320px;
@@ -109,18 +130,6 @@ nav img.logo {
   display: inline-block;
   vertical-align: text-bottom;
 }
-nav ul.list {
-  float: right;
-  margin: 10px 0 10px;
-}
-nav ul li.list-item {
-  display: inline;
-  margin-right: 10px;
-}
-nav ul li.list-item a {
-  text-decoration: none;
-  color: #EEEEEE;
-}
 header {
   text-align: center;
   margin-top: 40px !important;
@@ -136,11 +145,76 @@ header img.cover {
 }
 footer .contact {
   float: left;
-  margin-left: 40px;
+  margin-left: 20px;
   width: 40%;
   min-width: 240px;
 }
 footer .address {
   float: right;
-  margin-right: 40px;
+  margin-right: 20px;
+}
+
+nav .menu-mobile {
+  display: block;
+  float: right;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+nav .menu-mobile img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  filter: brightness(100);
+}
+
+nav .menu-mobile:hover ul.list {
+  display: block;
+}
+
+nav .menu-mobile ul.list {
+  display: none;
+  background-color: #B983FF;
+  position: absolute;
+  left: 0;
+  top: 35px;
+  z-index: 200;
+  width: 100%;
+  padding: 20px 0 20px 40px;
+}
+nav ul li.list {
+  display: block;
+}
+nav ul li.list-item {
+  display: block;
+  margin: 10px;
+}
+nav ul li.list-item a {
+  text-decoration: none;
+  color: #EEEEEE;
+}
+nav .menu-website  {
+  display: none;
+  visibility: hidden;
+}
+
+@media screen and (min-width: 768px) {
+  /* hidden mobile */
+  nav .menu-mobile > * {
+    display: none;
+    visibility: hidden;
+  }
+  nav .menu-website  {
+    display: inline;
+    visibility: visible;
+    float: right;
+  }
+  nav ul.list {
+    margin: 5px 0 10px;
+  }
+  nav ul li.list-item {
+    display: inline;
+    margin-right: 10px;
+  }
 }
