@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Personal Blog</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>  <style>
+    .card .card-body .card-text {
+      height: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: wrap;
+      /* use webkit to cut text muliline*/
+      display: -webkit-box;
+      -webkit-line-clamp: 6;
+      -webkit-box-orient: vertical;
+    }
+  </style>
+</head>
+<body class="bg-dark text-light">
+  <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white fw-bold" href="#">
+        <img src="images/ff-icon.jpg" width="30" alt="Logo" class="d-inline-block align-text-top rounded-circle">
+        Viruskizz
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+              <a class="nav-link active" aria-current="page" aria href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#series">Series</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <header class="container text-center">
+    <h1 class="my-4">My Personal Blog</h1>
+    <img class="img-fluid" style="width: 100%; max-width: 720px;" src="images/ffcover.webp" alt="cover">
+  </header>
+  <article class="container my-3">
+    <p>
+      <strong class="text-info">Final Fantasy</strong> is a video game and published by Square Enix. It is a Japanese role-playing game series with varying gameplay, settings and stories between each installment, retaining plot and gameplay elements throughout, focusing on fantasy and science fantasy settings. Though the core series is a role-playing game franchise, it has branched into other genres, such as MMORPGs, tactical role-playing games, action role-playing games, and fighting games. The series has been distributed on many platforms, beginning with the Nintendo Entertainment System, and including consoles, computers, mobile operating systems and game streaming services. The series has also branched into other forms of media, particularly films, novels, and manga.
+    </p>
+    <h2>List</h2>
+    <ul>
+      <li><a>Final Fantasy IV</a></li>
+      <li><a>Final Fantasy V</a></li>
+      <li><a>Final Fantasy VI</a></li>
+      <li><a href="#ff7">Final Fantasy VII</a></li>
+      <li><a>Final Fantasy VIII</a></li>
+      <li><a>Final Fantasy IX</a></li>
+      <li><a>Final Fantasy X</a></li>
+      <li><a href="#ff12">Final Fantasy XII</a></li>
+      <li><a>Final Fantasy XIII</a></li>
+      <li><a>Final Fantasy XIV</a></li>
+      <li><a>Final Fantasy XV</a></li>
+    </ul>
+  </article>
+  <section id="series" class="container my-3">
+    <div class="row">
+        <div class="my-3 col-lg-4 col-md-6 col-sm-12">
+          <div class="card" style="width: 20rem;">
+            <img src="images/ff4.jpg" class="card-img-top" alt="ff4">
+            <div class="card-body bg-dark">
+              <h5 class="card-title">Final Fantasy IV</h5>
+              <p class="card-text">The game takes place in a medieval fantasy setting, and focuses on Cecil Harvey, the captain of the Red Wings of Baron. After performing a raid on Mysidia to steal the Water Crystal, Cecil and the knights question the..</p>
+              <a href="#" class="btn btn-primary invisible">Hidden</a>
+            </div>
+          </div>
+        </div>
+        <div class="my-3 col-lg-4 col-md-6 col-sm-12">
+          <div class="card" style="width: 20rem;">
+            <img src="images/ff5.jpg" class="card-img-top" alt="ff5">
+            <div class="card-body bg-dark">
+              <h5 class="card-title">Final Fantasy V</h5>
+              <p class="card-text">The game takes place in a medieval fantasy setting, and centers on a group of four strangers brought together by circumstance to save the Crystals that have mysteriously begun shattering. The one behind the phenomenon is the antagonist Exdeath, as part of a plan to release himself from imprisonment and gain the power of the Void, a realm of nothingness, which could bestow absolute power on one able to resist being absorbed by it.</p>
+              <a href="#" class="btn btn-primary invisible">Hidden</a>
+            </div>
+          </div>
+        </div>
+        <div class="my-3 col-lg-4 col-md-6 col-sm-12">
+          <div class="card" style="width: 20rem;">
+            <img src="images/ff6.jpg" class="card-img-top" alt="ff6">
+            <div class="card-body bg-dark">
+              <h5 class="card-title">Final Fantasy VI</h5>
+              <p class="card-text">It was released in March 2006 for the PlayStation 2, and was later re-released in Japan as an international version titled Final Fantasy XII International Zodiac Job System, with heavy changes made to the character development system by introducing jobs</p>
+              <a href="#" class="btn btn-primary invisible">Hidden</a>
+            </div>
+          </div>
+        </div>
+        <div class="my-3 col-lg-4 col-md-6 col-sm-12">
+          <div class="card" style="width: 20rem;">
+            <img src="images/ff7.jpg" class="card-img-top" alt="ff7">
+            <div class="card-body bg-dark">
+              <h5 class="card-title">Final Fantasy VII</h5>
+              <p class="card-text">It was released in January 1997 for the PlayStation, and was later re-released for the Microsoft Windows, PlayStation 3, PlayStation Portable, PlayStation Vita, PlayStation 4, iOS, Android, Xbox One, and Switch platforms, it is also included on the PlayStation Classic mini console.</p>
+              <a href="pages/ff7.html" class="btn btn-primary">Read more..</a>
+            </div>
+          </div>
+        </div>
+        <div class="my-3 col-lg-4 col-md-6 col-sm-12">
+          <div class="card" style="width: 20rem;">
+            <img src="images/ff8.jpg" class="card-img-top" alt="ff8">
+            <div class="card-body bg-dark">
+              <h5 class="card-title">Final Fantasy VIII</h5>
+              <p class="card-text">Final Fantasy VIII is the eighth main installment in the Final Fantasy series, developed and published by Squaresoft. It was released in February 1999 for the PlayStation, and has since been re-released on Microsoft Windows in 2000, with this version being ported to Steam in 2013. A remastered version was released September 3,[2] 2019 on Nintendo Switch, PlayStation 4, Xbox One and PC via Steam.[3]</p>
+              <a href="#" class="btn btn-primary invisible">Hidden</a>
+            </div>
+          </div>
+        </div>
+        <div class="my-3 col-lg-4 col-md-6 col-sm-12">
+          <div class="card" style="width: 20rem;">
+            <img src="images/ff12.jpg" class="card-img-top" alt="ff12">
+            <div class="card-body bg-dark">
+              <h5 class="card-title">Final Fantasy XII</h5>
+              <p class="card-text">It was released in March 2006 for the PlayStation 2, and was later re-released in Japan as an international version titled Final Fantasy XII International Zodiac Job System, with heavy changes made to the character development system by introducing jobs.</p>
+              <a href="pages/ff12" class="btn btn-primary">Read more..</a>
+            </div>
+          </div>
+        </div>
+    </div>
+  </section>
+  <hr>
+  <footer id="contact" class="container mb-4">
+    <div class="row mt-3">
+      <div class="col-6">
+        <h2>Contact Me</h2>
+        <form>
+          <div class="mb-3">
+            <label for="inputName" class="form-label">Name</label>
+            <input type="name" class="form-control" id="inputName" placeholder="John Doe">
+          </div>
+          <div class="mb-3">
+            <label for="inputEmail" class="form-label">Email</label>
+            <input type="email" class="form-control" id="inputEmail" placeholder="example@gmail.com">
+          </div>
+          <div class="mb-3">
+            <label for="inputEmail" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="4"></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit">Submit</button>
+        </form>
+      </div>
+      <div class="col-6 text-end">
+        <h2>Address</h2>
+        <address class="fst-italic">
+          Sqaure Enix<br>
+          Japanese
+        </address>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
