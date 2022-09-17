@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>psuedo</title>
+    <style>
+        p::after {
+            content: "after p";
+        }
+        div {
+            margin: 10px;
+        }
+        input[type="text"] {
+            border: gray solid 1px;
+            border-radius: 5px;
+        }
+        button {
+            padding: 5px 10px 5px 10px;
+            background-color: navy;
+            color: white;
+        }
+        button:hover {
+            background-color: darkgreen;
+        }
+    </style>
+</head>
+<body>
+    <p></p>
+    <div>
+        <label for="name">Name</label>
+        <input type="text" id="name">
+    </div>
+    <div>
+        <label for="name">Email</label>
+        <input type="email" id="email">
+    </div>
+    <button>Submit</button>
+</body>
+</html>
