@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
+  <link rel="icon" type="image/x-icon" href="images/icons/favicon.ico">
+  <title>My Personal Blog - Tailwind</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .cut-text {
+      height: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: wrap;
+      /* use webkit to cut text muliline*/
+      display: -webkit-box;
+      -webkit-line-clamp: 6;
+      -webkit-box-orient: vertical;
+    }
+  </style>
+</head>
+<body class="bg-slate-900 text-white">
+  <nav class="bg-violet-900 py-4 px-4">
+    <div class="container mx-auto flex flex-row justify-between">
+      <div class="flex flex-row">
+        <img class="w-8 h-8 rounded-full mr-2" src="images/ff-icon.jpg" alt="icon">
+        <h1 class="text-xl font-semibold">Viruskizz</h1>
+      </div>
+      <div>
+        <ul class="flex flex-row">
+          <li class="mx-2 text-base"><a href="#">Home</a></li>
+          <li class="mx-2 text-base"><a href="#series">Series</a></li>
+          <li class="mx-2 text-base"><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <header class="container text-center">
+    <h1 class="text-4xl my-4">My Personal Blog</h1>
+    <img class="mx-auto w-11/12 max-w-2xl min-w-xs" src="images/ffcover.webp" alt="cover-img">
+  </header>
+  <article class="container my-3 mx-auto max-w-4xl">
+    <p>
+      <strong class="text-amber-400">Final Fantasy</strong> is a video game franchise developed and published by <bold>Square Enix</bold>. 
+      It is a <em>Japanese role-playing game</em> series with varying gameplay, settings and stories between each installment, retaining plot and gameplay elements throughout, focusing on fantasy and science fantasy settings. 
+      Though the core series is a role-playing game franchise, it has branched into other genres, such as <i>MMORPGs</i>, tactical role-playing games, action role-playing games, and fighting games. 
+      The series has been distributed on many platforms, beginning with the Nintendo Entertainment System, and including consoles, computers, mobile operating systems and game streaming services. 
+      The series has also branched into other forms of media, particularly films, novels, and manga.
+    </p>
+    <h2 class="text-2xl font-semibold mt-3 mb-2">List</h2>
+    <ul>
+      <li class="list-disc ml-6"><a>Final Fantasy IV</a></li>
+      <li class="list-disc ml-6"><a>Final Fantasy V</a></li>
+      <li class="list-disc ml-6"><a>Final Fantasy VI</a></li>
+      <li class="list-disc ml-6 text-blue-400"><a href="#ff7">Final Fantasy VII</a></li>
+      <li class="list-disc ml-6"><a>Final Fantasy VIII</a></li>
+      <li class="list-disc ml-6"><a>Final Fantasy IX</a></li>
+      <li class="list-disc ml-6"><a>Final Fantasy X</a></li>
+      <li class="list-disc ml-6 text-blue-400"><a href="#ff12">Final Fantasy XII</a></li>
+      <li class="list-disc ml-6"><a>Final Fantasy XIII</a></li>
+      <li class="list-disc ml-6"><a>Final Fantasy XIV</a></li>
+      <li class="list-disc ml-6"><a>Final Fantasy XV</a></li>
+    </ul>
+  </article>
+  <main id="series" class="container my-3 mx-auto max-w-4xl">
+    <h2 class="text-2xl font-semibold mt-3 mb-2">Series</h2>
+    <section class="flex flex-row gap-3 flex-wrap justify-around">
+      <div class="w-72 rounded-lg border">
+        <img class="w-fit rounded-t-lg mb-3" src="images/ff4.jpg" alt="ff4">
+        <div class="px-4 pt-2 pb-4">
+          <h3 class="text-xl font-semibold mb-2">Final Fantasy IV</h3>
+          <p class="mb-3 cut-text">The game takes place in a medieval fantasy setting, and focuses on Cecil Harvey, the captain of the Red Wings of Baron. After performing a raid on Mysidia to steal the Water Crystal, Cecil and the knights question the orders of their king as they believed stealing from the Mysidians was wrong.</p>
+          <a href="" class="invisible">
+            <button class="py-2 px-4 bg-amber-500 rounded">Read more..</button>
+          </a>
+        </div>
+      </div>
+      <div class="w-72 rounded-lg border">
+        <img class="w-fit rounded-t-lg mb-3" src="images/ff5.jpg" alt="ff5">
+        <div class="px-4 pt-2 pb-4">
+          <h3 class="text-xl font-semibold mb-2">Final Fantasy V</h3>
+          <p class="mb-3 cut-text">The game takes place in a medieval fantasy setting, and centers on a group of four strangers brought together by circumstance to save the Crystals that have mysteriously begun shattering. The one behind the phenomenon is the antagonist Exdeath, as part of a plan to release himself from imprisonment and gain the power of the Void, a realm of nothingness, which could bestow absolute power on one able to resist being absorbed by it.</p>
+          <a href="" class="invisible">
+            <button class="py-2 px-4 bg-amber-500 rounded">Read more..</button>
+          </a>
+        </div>
+      </div>
+      <div class="w-72 rounded-lg border">
+        <img class="w-fit rounded-t-lg mb-3" src="images/ff6.jpg" alt="ff6">
+        <div class="px-4 pt-2 pb-4">
+          <h3 class="text-xl font-semibold mb-2">Final Fantasy VI</h3>
+          <p class="mb-3 cut-text">Final Fantasy VI focuses on a conflict between the Gestahlian Empire conquering the world and a rebel faction opposed to them known as the Returners, taking place in a fantasy steampunk-style world. The Empire has acquired great power by experimenting on captured espers, magical creatures of legend.</p>
+          <a href="" class="invisible">
+            <button class="py-2 px-4 bg-amber-500 rounded">Read more..</button>
+          </a>
+        </div>
+      </div>
+      <div class="w-72 rounded-lg border">
+        <img class="w-fit rounded-t-lg mb-3" src="images/ff7.jpg" alt="ff7">
+        <div class="px-4 pt-2 pb-4">
+          <h3 class="text-xl font-semibold mb-2">Final Fantasy VII</h3>
+          <p class="mb-3 cut-text">Final Fantasy VIII is the eighth main installment in the Final Fantasy series, developed and published by Squaresoft. It was released in February 1999 for the PlayStation, and has since been re-released on Microsoft Windows in 2000, with this version being ported to Steam in 2013. A remastered version was released September 3,[2] 2019 on Nintendo Switch, PlayStation 4, Xbox One and PC via Steam.[3]</p>
+          <a href="pages/ff7.html">
+            <button class="py-2 px-4 bg-amber-500 rounded">Read more..</button>
+          </a>
+        </div>
+      </div>
+      <div class="w-72 rounded-lg border">
+        <img class="w-fit rounded-t-lg mb-3" src="images/ff8.jpg" alt="ff8">
+        <div class="px-4 pt-2 pb-4">
+          <h3 class="text-xl font-semibold mb-2">Final Fantasy VIII</h3>
+          <p class="mb-3 cut-text">It was released in March 2006 for the PlayStation 2, and was later re-released in Japan as an international version titled Final Fantasy XII International Zodiac Job System, with heavy changes made to the character development system by introducing jobs.</p>
+          <a href="#" class="invisible">
+            <button class="py-2 px-4 bg-amber-500 rounded">Read more..</button>
+          </a>
+        </div>
+      </div>
+      <div class="w-72 rounded-lg border">
+        <img class="w-fit rounded-t-lg mb-3" src="images/ff12.jpg" alt="ff12">
+        <div class="px-4 pt-2 pb-4">
+          <h3 class="text-xl font-semibold mb-2">Final Fantasy XII</h3>
+          <p class="mb-3 cut-text">It was released in March 2006 for the PlayStation 2, and was later re-released in Japan as an international version titled Final Fantasy XII International Zodiac Job System, with heavy changes made to the character development system by introducing jobs.</p>
+          <a href="pages/ff12.html">
+            <button class="py-2 px-4 bg-amber-500 rounded">Read more..</button>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
